@@ -1,27 +1,9 @@
-# Parcial 01 – Microservicio Factorial
+# Parcial 02 – Microservicio Factorial
 
 Este microservicio recibe un **número por URL** y devuelve una **respuesta JSON** con:
 - El número recibido  
 - Su factorial  
 - Una etiqueta `"par"` o `"impar"` según corresponda (evaluando el número recibido)
-
----
-
-## Ejemplo de funcionamiento
-
-### Petición:
-```
-GET /calc/5
-```
-
-### Respuesta:
-```json
-{
-  "numero": 5,
-  "factorial": 120,
-  "etiqueta": "impar"
-}
-```
 
 ---
 
@@ -42,9 +24,9 @@ El servicio quedará disponible en:
 http://127.0.0.1:8000
 ```
 
-### 3. Probar en el navegador o con curl:
+### 3. Probar en el navegador:
 ```bash
-curl http://127.0.0.1:8000/calc/6
+http://127.0.0.1:8000/calc/6
 ```
 
 **Salida esperada:**
@@ -54,16 +36,6 @@ curl http://127.0.0.1:8000/calc/6
   "factorial": 720,
   "etiqueta": "par"
 }
-```
-
----
-
-## Archivos del proyecto
-```
-parcial01-factorial/
-├─ app.py              # Código fuente del microservicio
-├─ requirements.txt    # Dependencias necesarias
-└─ README.md           # Documento de análisis y explicación
 ```
 
 ---
